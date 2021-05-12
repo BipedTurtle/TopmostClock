@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "alr4P1V0Oj3ApaLgrM4CusBiXVuGdIb9BGppXGiK/0ngjADS6KsM4sqlw1/zRxaVXQXvW2GHzWdKASnBXk1SRw==",
+  "success": true,
+  "projectFilePath": "D:\\Serious Projects\\Topmost Timer\\TopmostTimer\\TopmostTimer\\TopmostTimer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\참관자\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
+    "C:\\Users\\참관자\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.1.0\\autofac.extensions.dependencyinjection.7.1.0.nupkg.sha512",
+    "C:\\Users\\참관자\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\참관자\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512",
+    "C:\\Users\\참관자\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\참관자\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\참관자\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
