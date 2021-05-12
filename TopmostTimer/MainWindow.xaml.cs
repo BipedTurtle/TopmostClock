@@ -27,5 +27,13 @@ namespace TopmostTimer
 
             DataContext = mainViewModel;
         }
+
+
+        private void DragOver_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+                DragMove();
+
+        }
     }
 }

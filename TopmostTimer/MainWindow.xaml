@@ -6,9 +6,63 @@
         xmlns:local="clr-namespace:TopmostTimer"
         xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" 
+        Height="250" Width="300"
+        MaxHeight="500" MaxWidth="600"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        MouseDown="DragOver_MouseDown"
+        ResizeMode="NoResize"
+        Topmost="True"
+        Cursor="Hand">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </Window.Resources>
+    
     <Grid>
-        <Button Content="Welcome"
-                HorizontalAlignment="Center"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid>
+            <Rectangle Fill="{StaticResource MaterialDesignDarkBackground}"/>
+            <StackPanel Orientation="Horizontal"
+                        HorizontalAlignment="Right">
+                <Button Padding="5 0" 
+                        Background="#FF6C6C6C"
+                        BorderBrush="#FF6C6C6C">
+                    <md:PackIcon Kind="Minus"
+                                 Width="25" Height="25"/>
+                </Button>
+                <Button Padding="5 0" 
+                        Background="#FF3972A0"
+                        BorderBrush="#FF3972A0">
+                    <md:PackIcon Kind="Resize"
+                                 Width="25" Height="25"/>
+                </Button>
+                <Button Padding="5 0" 
+                        Background="#FF983B3B"
+                        BorderBrush="#FF983B3B">
+                    <md:PackIcon Kind="Close"
+                                 Width="25" Height="25"/>
+                </Button>
+            </StackPanel>
+        </Grid>
+        
+        <Viewbox Grid.Row="1">
+            <Grid>
+                <Rectangle Fill="White"
+                           Opacity=".1"/>
+                <TextBlock d:Text="8:45" Text="8:45"
+                           Grid.Row="1"
+                           FontSize="60"
+                           HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            </Grid>
+        </Viewbox>
     </Grid>
 </Window>
