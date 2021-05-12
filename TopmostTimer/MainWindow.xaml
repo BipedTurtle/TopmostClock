@@ -13,8 +13,8 @@
         Background="Transparent"
         AllowsTransparency="True"
         WindowStyle="None"
-        MouseDown="DragOver_MouseDown"
         ResizeMode="NoResize"
+        MouseDown="DragOver_MouseDown"
         Topmost="True"
         Cursor="Hand">
     <Window.Resources>
@@ -22,7 +22,7 @@
             <Setter Property="Foreground" Value="White"/>
         </Style>
     </Window.Resources>
-    
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="30"/>
@@ -35,34 +35,41 @@
                         HorizontalAlignment="Right">
                 <Button Padding="5 0" 
                         Background="#FF6C6C6C"
-                        BorderBrush="#FF6C6C6C">
+                        BorderBrush="#FF6C6C6C"
+                        Click="CollapseWindow_Click">
                     <md:PackIcon Kind="Minus"
                                  Width="25" Height="25"/>
                 </Button>
                 <Button Padding="5 0" 
                         Background="#FF3972A0"
-                        BorderBrush="#FF3972A0">
+                        BorderBrush="#FF3972A0"
+                        Click="ResizeWindow_Click">
                     <md:PackIcon Kind="Resize"
                                  Width="25" Height="25"/>
                 </Button>
                 <Button Padding="5 0" 
                         Background="#FF983B3B"
-                        BorderBrush="#FF983B3B">
+                        BorderBrush="#FF983B3B"
+                        Click="CloseApp_Click">
                     <md:PackIcon Kind="Close"
                                  Width="25" Height="25"/>
                 </Button>
             </StackPanel>
         </Grid>
-        
-        <Viewbox Grid.Row="1">
-            <Grid>
-                <Rectangle Fill="White"
-                           Opacity=".1"/>
-                <TextBlock d:Text="8:45" Text="8:45"
-                           Grid.Row="1"
-                           FontSize="60"
-                           HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
-            </Grid>
-        </Viewbox>
+
+        <Grid Grid.Row="1">
+            <Rectangle Fill="White"
+                       Opacity=".05"/>
+            <Border Background="Transparent"
+                    Grid.Row="1">
+                <Viewbox>
+                    <TextBlock d:Text="8:45" Text="8:45"
+                               Grid.Row="1"
+                               FontSize="60"
+                               Foreground="#FFB8B8B8"
+                               HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                </Viewbox>
+            </Border>
+        </Grid>
     </Grid>
 </Window>
