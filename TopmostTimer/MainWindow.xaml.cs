@@ -35,7 +35,7 @@ namespace TopmostTimer
 
         private void InitializeWindowSize()
         {
-            var smallWindow = new LinkedListNode<(double, double)>((175, 210));
+            var smallWindow = new LinkedListNode<(double, double)>((135, 210));
             var bigWindow = new LinkedListNode<(double, double)>((this.Height, this.Width));
 
             _windowSizes.AddLast(smallWindow);
